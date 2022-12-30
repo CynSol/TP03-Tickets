@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conferencias de Buenos Aires</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <!--<link rel="stylesheet" href="styles.css">-->
+</head>
+
+<body>
+
+    <nav class="navbar bg-dark">
+        <div class="container-fluid ">
+            <a class="navbar-brand text-light" href="#">
+                <img src="./assets/media/codoacodo.png" alt="Logo Codo a Codo" height="40"
+                    class="d-inline-block align-text-top">
+                Conf Bs As
+            </a>
+
+            <ul class="nav">
+                <li class="nav-item ">
+                    <a class="nav-link text-white" aria-current="page" href="#oradores">La Conferencia</a>
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link text-muted">Los oradores</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link text-muted">El lugar y la fecha</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link text-muted">Conviertete en orador</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-success" aria-current="page" href="#">Comprar tickets</a>
+                </li>
+        </div>
+    </nav>
+
+    <header>
+       
+    </header>
+
+    <main>
+        <section>
+
+            <div class="container p-4">
+                <div class="row text-center">
+                    <div class="col align-self-center ">
+                       
+                    </div>
+                </div>
+
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <div class="card w-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Estudiante</h3>
+                            <p class="card-text">Tiene un descuento</p>
+                            <p>80%</p>
+                            <p>*presentar documentacion</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Trainee</h3>
+                            <p class="card-text">Tiene un descuento</p>
+                            <p>50%</p>
+                            <p>*presentar documentacion</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Junior</h3>
+                            <p class="card-text">Tiene un descuento</p>
+                            <p>15%</p>
+                            <p>*presentar documentacion</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container p-4">
+                <div class="row text-center">
+                    <div class="col align-self-center ">
+                        <h2 id="orador" class="display-6 fs-6 ">VENTA <span class="fs-1" style="display: block;">VALOR DE TICKET $200</span></h2>
+                    </div>
+                </div>
+                
+                <form>
+                    <div class="row ">
+                        <div class="col p-2">
+                            <input type="text" class="form-control" id="inputNombre" placeholder="Nombre">
+                        </div>
+                        <div class="col p-2">
+                            <input type="text" class="form-control" id="inputApellido" placeholder="Apellido">
+                        </div>
+                    </div>   
+                    <div class="row -1 col p-2">
+                        <input type="text" class="form-control" id="inputCorreo" placeholder="Correo">
+                    </div>
+
+                    <div class="row ">
+                        <div class="col p-2">
+                            <h6>Cantidad</h6>
+                            <input type="text" class="form-control" id="inputCantidad" placeholder="Cantidad">
+                        </div>
+                        <div class="col p-2">
+                            <h6>Categoria</h6>
+                            <form action="#">
+                            <select name="Categoria" id="Categoria">
+                                <option value="Estudiante">Estudiante</option>
+                                <option value="Trainee">Trainee</option>
+                                <option value="Junior">Junior</option>
+                            </select>
+                            </form>
+                        </div>
+                    </div> 
+
+                    <div class="row -1 col p-2">
+                        <h6>Total a Pagar</h6>
+                        <input type="text" class="form-control" id="TotalAPagar" placeholder="Total a Pagar">
+                    </div>
+
+                    <div class="row -1 col p-2" id="liveAlertPlaceHolder">
+                        
+                        <div class="col p-2">
+                            <p class="Borrar"></p>
+                            <button type="reset" class="btn btn-success w-100">Borrar</button>
+                        </div>
+                        <div class="col p-2">
+                            <p class="Resumen"></p>
+                            <button onclink="TotalAPagar()" type="button" class="btn btn-success w-100" id="resultado">Resumen</button>
+                          
+                        </div>
+                    </div>  
+                    
+                    
+                      
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <ul class="nav bg-primary justify-content-center p-4">
+            <li class="nav-item ">
+                <a class="nav-link text-white">Preguntas frecuentes</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link text-white">Contactanos</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link text-white">Prensa</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link text-white">Conferencias</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link text-white">Terminos y Condiciones</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link text-white">Privacidad</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link text-white">Estudiantes</a>
+            </li>
+        </ul>
+    </footer>
+    
+    <!--<script src="assets/js/bootstrap.js"></script>-->
+</body>
+<script src="script.js"></script>
+
+</html>
+
+                   
+                   
